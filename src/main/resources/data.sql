@@ -1,0 +1,5 @@
+MERGE INTO `product` (product_id, name, brand, category, description, quantity, price, image) VALUES 
+(1,'88 Qing Bing', 'Menghai Tea Factory', 'Tea', 'This is the most famous tea ever made', 1, 20000.00, 'https://teadb.org/wp-content/uploads/2014/05/88-Qing-Bing.jpg'),
+(2, 'Fo Shou Teapot', 'Yanni', 'Yixing Teapot', 'This is a handmade yixing clay teapot', 5, 1200.00, 'https://images1.bonhams.com/image?src=Images/live/2011-10/20/8394133-166-1.jpg&width=640&height=480&autosizefit=1'),
+(3, 'Handpainted Chinese Teacup', 'Dayi', 'Teaware', 'Painted in 2001', 7, 30.00, 'https://ae01.alicdn.com/kf/H644f91cce40441b5b389dc50c497f5e1z.jpg'),
+(4, 'Gushu 2021 Sheng Puer Cake', 'Fengqing', 'Tea', 'Picked from 400 year old trees.', 200, 100.00, 'https://cdn.shopify.com/s/files/1/2669/5944/products/Fengqing-Ancient-Tree-Spring-Chun-Jian-Raw-Puerh-Carke-2012_1_cb41eca2-cde8-41c3-b1cd-855fed5ed4c3_1024x1024@2x.jpg?v=1609649620');
