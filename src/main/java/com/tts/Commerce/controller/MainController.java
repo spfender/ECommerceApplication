@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.tts.Commerce.Services.ProductService;
+import com.tts.Commerce.Services.UserService;
 import com.tts.Commerce.model.Product;
 
 import lombok.Data;
@@ -22,6 +23,7 @@ public class MainController
 {
     @Autowired
     ProductService productService;
+    
     
     @GetMapping("/")
     public String main()

@@ -49,6 +49,10 @@
 					</tr>
 				</tfoot>
 			</table>
+			<form action='/checkout' method='POST'>
+  <input type='hidden' name='amount' th:value='${#aggregates.sum(list)}'>
+  <button type="submit" class="btn btn-primary">Checkout</button>
+</form>
 			<form th:action="@{/cart}" method="post" id="updateForm"
 				th:if="${cart.size() > 0}">
 				<!-- form doesn't support PATCH requests, but this tells Spring Boot to use @PatchMapping anyway. -->
@@ -57,7 +61,8 @@
 			</form>
 			<div th:if="${cart.size() == 0}">Nothing in your cart yet.</div>
 		</div>
-		<form action='/charge' method='POST' id='checkout-form'>
+		
+		<form action='/checkout' method='POST' id='checkout-form'>
 			<input type='hidden' th:value='${amount}' name='amount' /> <label>Price:<span
 				th:text='${amount}'></span></label>
 			<!-- NOTE: data-key/data-amount/data-currency will be rendered by Thymeleaf -->
